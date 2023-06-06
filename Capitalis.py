@@ -59,7 +59,7 @@ while rejouer:
 
             nom = input()
 
-            compteur_essais = 1
+            compteur_essais = 0
             essais_max = 3
 
             if nom.strip() == '':
@@ -67,23 +67,23 @@ while rejouer:
                 print()
                 score -= 1  # Décrémente le score de -1 en cas de réponse vide
             else:
-
-                while True:
-                    nom = input("Essaie encore : ")
+                while compteur_essais < essais_max:
+                    compteur_essais += 1
                     if nom.lower() == pays['CAPITALE'].lower():
-                        print("Bravo, c'est gagné !")
-                        score += 1  # Incrémente le score en cas de bonne réponse
-                        break  # Sort de la boucle pour passer au joueur suivant ou à la manche suivante
+                        print('Bonne réponse !')
+                        score += 1
+                        break
                     elif nom.strip() == '':
                         print("Dommage, la réponse était", pays['CAPITALE'])
-                        score -= 1  # Décrémente le score de -1 en cas de réponse vide
-                        break  # Sort de la boucle pour passer au joueur suivant ou à la manche suivante
+                        score -= 1
+                        break
                     elif compteur_essais == essais_max:
                         print("Plus d'essais. La réponse était", pays['CAPITALE'])
-                        score -= 1  # Décrémente le score de -1 en cas d'échec d'essais
-                        break  # Sort de la boucle pour passer au joueur suivant ou à la manche suivante
+                        score -= 1
+                        break
                     else:
-                        compteur_essais += 1
+                        print('Essaie encore')
+                        nom = input()
 
             print("Score actuel pour", joueur + ":", score)
             print()
