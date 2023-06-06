@@ -27,7 +27,7 @@ et à la fin de la partie.
 Le jeu peut se jouer en solo.
 
 
-**Update 06/06/2023**: Ajout d'un mode département français, sur le même principes que les capitales, un numéro s'affiche, à vous de trouver à quel département il appartient. Le système de scoring fonctionne de la même façon que le jeu des capitales.
+**Update 06/06/2023**: Ajout d'un mode départements français, sur le même principes que les capitales, un numéro s'affiche, à vous de trouver à quel département il appartient. Le système de scoring fonctionne de la même façon que pour les capitales.
 
 #Prochaine étape: 
 
