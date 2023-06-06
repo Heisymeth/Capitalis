@@ -3,8 +3,11 @@ Jeu des capitales pour des soirées endiablées.
 Composition des fichiers:
 
 - liste = Liste d'origine trouvée en ligne
-- Nettoyage data = Jupyter notebook de nettoyage des données
 - list_clean = Liste nettoyée
+- Nettoyage data = Jupyter notebook de nettoyage des données
+- depts_fr = Liste origine pour les départements FR
+- depts_fr_clean = Liste nettoyée
+- Nettoyage depts = Jupyter notebook de nettoyage des données
 - Capitalis.py = Jeu à lancer dans la ligne de commande voici les étapes à suivre:
 
 Installation
