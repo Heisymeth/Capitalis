@@ -67,7 +67,7 @@ while rejouer:
                 print()
                 score -= 1  # Décrémente le score de -1 en cas de réponse vide
             else:
-                
+
                 while True:
                     nom = input("Essaie encore : ")
                     if nom.lower() == pays['CAPITALE'].lower():
@@ -99,6 +99,19 @@ while rejouer:
         print()
         sys.stdout.flush()
         time.sleep(1)  # Attend une seconde avant de passer à la prochaine manche
+
+    # Determine the winner
+    max_score = max(scores)
+    winners = [joueur for joueur, score in zip(joueurs, scores) if score == max_score]
+    num_winners = len(winners)
+
+    # Display the winner(s)
+    if num_winners == 1:
+        print("The winner is", winners[0] + "!")
+    else:
+        print("It's a tie! The winners are:")
+        for winner in winners:
+            print(winner)
 
     print("Scores finaux")
     print()
