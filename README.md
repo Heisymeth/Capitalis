@@ -9,6 +9,7 @@ Composition des fichiers:
 - depts_fr_clean = Liste nettoyée
 - Nettoyage depts = Jupyter notebook de nettoyage des données
 - Capitalis.py = Jeu à lancer dans la ligne de commande voici les étapes à suivre:
+- Visuel.py = test de mise en place d'un visuel sous python
 
 Installation
 
